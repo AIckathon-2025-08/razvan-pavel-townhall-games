@@ -4,15 +4,11 @@ A simple web application for hosting and playing games during townhall meetings.
 
 ## Pages
 
-
 ![Vote Page](images/vote.png)
-
-- **index.html**: Main landing page for users to view and participate in games.
+**index.html**: Main landing page for users to view and participate in games.
 
 ![Admin Page](images/admin.png)
-
-- **admin.html**: Admin interface for managing games and settings.
-  
+**admin.html**: Admin interface for managing games and settings.
 
 ## Running Locally
 
@@ -47,3 +43,8 @@ A simple web application for hosting and playing games during townhall meetings.
 ---
 
 Feel free to customize the HTML pages for your specific games or meeting needs.
+
+---
+
+**Troubleshooting:**
+If images do not display on GitHub, ensure they are committed and pushed to your repository. If viewing locally, some markdown viewers may not show images unless the files are present and valid.
