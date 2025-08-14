@@ -123,6 +123,85 @@ input[type="file"].styled-input {
 .admin-form-panel, .preview-panel {
   padding: 20px;
 }
+.lie-section {
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto 0 auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(121,84,255,0.10);
+  padding: 32px 40px 24px 40px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.lie-section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #7954ff;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(121,84,255,0.08);
+}
+.lie-section .button-row {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 0;
+}
+.lie-btn {
+  background: linear-gradient(90deg, #7954ff 0%, #77eac1 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  font-weight: bold;
+  padding: 16px 32px;
+  margin: 0 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(121,84,255,0.10);
+  transition: background 0.2s, transform 0.2s;
+}
+.lie-btn:hover {
+  background: linear-gradient(90deg, #77eac1 0%, #7954ff 100%);
+  transform: scale(1.10);
+}
+#lieMessage {
+  margin-top: 22px;
+  font-size: 1.35rem;
+  font-weight: bold;
+  color: #2ecc40;
+  background: #eafbe7;
+  border-radius: 10px;
+  padding: 18px 0;
+  box-shadow: 0 2px 12px rgba(46,204,64,0.10);
+  letter-spacing: 1px;
+  text-align: center;
+}
+.reset-townhall-btn {
+  margin-top: 32px;
+  background: linear-gradient(90deg, #e74c3c 0%, #77eac1 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  font-weight: bold;
+  padding: 16px 32px;
+  box-shadow: 0 2px 12px rgba(231,76,60,0.10);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.reset-townhall-btn:hover {
+  background: linear-gradient(90deg, #77eac1 0%, #e74c3c 100%);
+  transform: scale(1.10);
+}
+#resetTownhallMsg {
+  margin-top: 18px;
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: #2ecc40;
+  text-align: center;
+}
 @media (max-width: 950px) {
   .container {
     max-width: 100%;

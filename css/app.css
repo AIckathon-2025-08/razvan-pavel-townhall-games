@@ -67,6 +67,85 @@ body {
   margin-left: 12px;
 }
 
+.vote-buttons {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  margin: 32px 0 16px 0;
+}
+.vote-btn {
+  background: linear-gradient(90deg, #7954ff 0%, #77eac1 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 16px 32px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s, transform 0.2s;
+}
+.vote-btn:hover {
+  background: linear-gradient(90deg, #77eac1 0%, #7954ff 100%);
+  transform: scale(1.05);
+}
+.vote-btn.voted {
+  transform: scale(1.25);
+  box-shadow: 0 4px 24px rgba(121,84,255,0.18);
+  z-index: 2;
+}
+.vote-btn.full-width {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  padding: 18px 0;
+  border-radius: 12px;
+  background: #77eac1;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
+.vote-btn.full-width:disabled {
+  background: #b2b2b2;
+  color: #fff;
+  cursor: not-allowed;
+}
+.results {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #7954ff;
+}
+.results-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.results-row {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 8px;
+}
+.story {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  color: #7a5c2e;
+}
+.stories {
+  margin-bottom: 10px;
+}
+.confetti {
+  animation: confetti-fall 1.2s ease-out;
+  pointer-events: none;
+}
+@keyframes confetti-fall {
+  0% { opacity: 1; top: 0; }
+  80% { opacity: 1; top: 40px; }
+  100% { opacity: 0; top: 60px; }
+}
+
 @media (max-width: 950px) {
   .container {
     max-width: 100%;
@@ -81,4 +160,36 @@ body {
     max-width: 100%;
     width: 100%;
   }
+}
+
+.vote-message.full-width {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  padding: 22px 40px; /* Increased left and right padding */
+  border-radius: 14px;
+  background: linear-gradient(90deg, #77eac1 0%, #7954ff 100%);
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(121,84,255,0.10);
+  letter-spacing: 1px;
+}
+
+.feedback-message.correct-feedback {
+  color: #2ecc40;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 32px 0;
+  letter-spacing: 2px;
+}
+.feedback-message.wrong-feedback {
+  color: #e74c3c;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 18px 0;
+  letter-spacing: 1px;
 }

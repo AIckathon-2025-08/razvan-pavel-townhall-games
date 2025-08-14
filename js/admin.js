@@ -111,3 +111,39 @@ window.addEventListener('DOMContentLoaded', () => {
   refreshPreviewPanel();
   // Do not show New one button on load
 });
+
+document.querySelectorAll('.lie-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const lie = parseInt(this.getAttribute('data-lie'));
+    fetch('/api/lie', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ lie })
+    })
+    .then(res => res.json())
+    .then(data => {
+      if (data.success) {
+        document.getElementById('lieMessage').textContent = `Story ${lie} marked as the lie!`;
+      } else {
+        document.getElementById('lieMessage').textContent = 'Error setting the lie.';
+      }
+    })
+    .catch(() => {
+      document.getElementById('lieMessage').textContent = 'Error setting the lie.';
+    });
+  });
+});
+
+// Auto-reset townhall if accessed on a new day
+fetch('/api/publish-date')
+  .then(res => res.json())
+  .then(data => {
+    const lastDate = data.date;
+    const today = new Date().toISOString().slice(0, 10);
+    if (lastDate && lastDate !== today) {
+      fetch('/api/reset-townhall', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' }
+      });
+    }
+  });

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Townhall Games - Live Results</title>
+  <link href="css/results.css" rel="stylesheet">
+</head>
+<body>
+  <div class="results-container">
+    <div class="results-title">Live Voting Results</div>
+    <div style="display: flex; flex-direction: row; align-items: flex-start; justify-content: center;">
+      <canvas id="resultsPieChart" width="600" height="600" style="margin-right: 48px;"></canvas>
+      <div id="resultsDetails" style="width: 100%; max-width: 400px;"></div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+  <script src="js/results.js"></script>
+</body>
+</html>
