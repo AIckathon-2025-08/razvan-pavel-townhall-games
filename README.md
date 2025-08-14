@@ -125,4 +125,13 @@ MIT License. Free to use and modify for your own events.
 
 ---
 
+## TODO Next 📝
+
+- Add voting system for audience to select which statement is the lie.
+- Live display of voting results as votes are cast.
+- Admin ability to reveal the correct answer when voting is complete.
+- Nice animation for winners and reveal moment.
+
+---
+
 Enjoy your townhall game of 2 Truths and 1 Lie! 🎉
