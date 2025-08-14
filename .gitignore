@@ -1,1 +1,57 @@
-db/
+# Node
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Logs
+logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build
+/dist
+/build
+
+# Dependency directories
+jspm_packages/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Docker
+*.pid
+
+# Misc
+*.tgz
+
+# Coverage
+coverage/
+
+# Others
+*.orig
+
+# Mac
+*.DS_Store
+
+# Test
+/test
+publish.json
+
+# Database
+# Ignore all files in db/ but keep the folder and .gitkeep
+/db/*
+!db/.gitkeep
