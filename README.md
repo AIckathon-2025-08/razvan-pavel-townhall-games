@@ -51,6 +51,19 @@ See the app in action:
 
 ---
 
+## Page Roles & Usage 🧑‍💻
+
+- **Main Page:**
+  - This page is intended for all voters. Share this link with participants so they can view the candidate and cast their vote.
+
+- **Admin Page:**
+  - This page is meant to be opened and used privately by the Townhall speaker or moderator. It is not for general participants.
+
+- **Results Page:**
+  - This page is designed to be displayed in a shared window (e.g., on Microsoft Teams, Zoom, or a projector) so everyone can see live voting results together.
+
+---
+
 ## How to Run Locally 🏠
 
 1. **Install dependencies:**
