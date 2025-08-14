@@ -21,7 +21,7 @@ A web application for hosting and playing the classic icebreaker game "2 Truths 
    - Each user can vote for which story they think is the lie by clicking one of the three vote buttons. (One vote per browser.)
    - After voting, users receive instant feedback and confetti animation.
 4. **Live results:**
-   - The [results page](http://localhost:1992/results.html) displays a live-updating chart (pie or bar) showing the current vote distribution for all three stories. Results update automatically as votes are cast.
+   - The [results page](http://localhost:1992/results) displays a live-updating chart (pie or bar) showing the current vote distribution for all three stories. Results update automatically as votes are cast.
 5. **Admin can reset for a new candidate:**
    - After publishing, a "New one" button appears to refresh and add another candidate.
 
@@ -45,7 +45,7 @@ See the app in action:
   Admin uploads candidate info and publishes to the main page.  
   ![Admin Page](./images/admin.png)
 
-- **Results Page:** [http://localhost:1992/results.html](http://localhost:1992/results.html)  
+- **Results Page:** [http://localhost:1992/results](http://localhost:1992/results) or [http://localhost:1992/results](http://localhost:1992/results)  
   Shows live voting results for the three stories, with an automatically updating chart.  
   ![Results Page](./images/results.png)
 
@@ -64,7 +64,7 @@ See the app in action:
 3. **Access the app:**
    - Main page: [http://localhost:1992/](http://localhost:1992/)
    - Admin page: [http://localhost:1992/admin](http://localhost:1992/admin)
-   - Results page: [http://localhost:1992/results.html](http://localhost:1992/results.html)
+   - Results page: [http://localhost:1992/results](http://localhost:1992/results)
 
 ---
 
@@ -152,7 +152,7 @@ No external database is required; all data is file-based and easy to back up or 
    - Click one of the three vote buttons to guess which story is the lie. (One vote per browser.)
    - After voting, instant feedback and confetti animation are shown.
 4. **View live results:**
-   - Go to the [results page](http://localhost:1992/results.html) to see a live-updating chart of votes for each story.
+   - Go to the [results page](http://localhost:1992/results) to see a live-updating chart of votes for each story.
 5. **Admin can reset for a new candidate:**
    - After publishing, a "New one" button appears to refresh and add another candidate.
 
