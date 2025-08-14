@@ -5,10 +5,10 @@ A simple web application for hosting and playing games during townhall meetings.
 ## Pages
 
 ![Vote Page](images/vote.png)
-**index.html**: Main landing page for users to view and participate in games.
+**Main page:** [http://localhost:1992/](http://localhost:1992/)
 
 ![Admin Page](images/admin.png)
-**admin.html**: Admin interface for managing games and settings.
+**Admin page:** [http://localhost:1992/admin](http://localhost:1992/admin)
 
 ## Running Locally
 
@@ -21,7 +21,7 @@ A simple web application for hosting and playing games during townhall meetings.
    node server.js
    ```
 3. **Access the app:**
-   - User page: [http://localhost:1992](http://localhost:1992)
+   - Main page: [http://localhost:1992/](http://localhost:1992/)
    - Admin page: [http://localhost:1992/admin](http://localhost:1992/admin)
 
 ## Running in Production
