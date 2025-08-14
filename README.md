@@ -5,7 +5,9 @@ A simple web application for hosting and playing games during townhall meetings.
 ## Pages
 
 - **index.html**: Main landing page for users to view and participate in games.
+  ![Vote Page](./images/vote.png)
 - **admin.html**: Admin interface for managing games and settings.
+  ![Admin Page](./images/admin.png)
 
 ## Running Locally
 
