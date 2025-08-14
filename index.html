@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Townhall Games</title>
+    <link href="css/app.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="title">Townhall Games ★</div>
+    <div class="preview-panel" id="preview"></div>
+</div>
+<script src="js/app.js"></script>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  fetch('/api/publish')
+    .then(res => {
+      if (res.headers.get('content-type')?.includes('application/json')) {
+        return res.json();
+      } else {
+        return {};
+      }
+    })
+    .then(data => {
+      const preview = document.getElementById('preview');
+      preview.innerHTML = '';
+      if (data.photo && data.name) {
+        // Ensure photo and name are direct children of preview-panel
+        preview.style.display = 'flex';
+        preview.classList.add('preview-panel');
+        const img = document.createElement('img');
+        img.src = data.photo;
+        img.className = 'preview-img';
+        img.alt = 'Photo';
+        const nameDiv = document.createElement('div');
+        nameDiv.className = 'preview-name';
+        nameDiv.textContent = data.name;
+        preview.appendChild(img);
+        preview.appendChild(nameDiv);
+      } else {
+        preview.style.display = 'none';
+        preview.classList.add('preview-panel');
+      }
+    })
+    .catch(() => {
+      const preview = document.getElementById('preview');
+      preview.innerHTML = '';
+      preview.style.display = 'none';
+      preview.classList.add('preview-panel');
+    });
+});
+</script>
+</body>
+</html>
